@@ -2,7 +2,9 @@ package com.alien.gof23.iterator.method1.bean;
 
 import com.alien.gof23.iterator.method1.Aggregate;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * 表示书架的类
@@ -12,11 +14,11 @@ import java.util.Iterator;
  */
 public class BookShelf implements Aggregate {
 
-    private Book[] books;
-    private int last = 0;
+    private List<Book> books;
+//    private int last = 0;
 
     public BookShelf(int maxSize) {
-        this.books = new Book[maxSize];
+        this.books = new ArrayList<>();
     }
 
     /**
@@ -26,8 +28,7 @@ public class BookShelf implements Aggregate {
      * @param book
      **/
     public void appendBook(Book book) {
-        this.books[last] = book;
-        last++;
+        books.add(book);
     }
 
     /**
@@ -38,7 +39,7 @@ public class BookShelf implements Aggregate {
      * @return com.alien.gof23.iterator.method1.bean.Book
      **/
     public Book getBookAt(int index) {
-        return books[index];
+        return books.get(index);
     }
 
     /**
@@ -48,7 +49,7 @@ public class BookShelf implements Aggregate {
      * @return int
      **/
     public int getLength() {
-        return last;
+        return books.size();
     }
 
     @Override

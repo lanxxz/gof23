@@ -18,6 +18,7 @@ public class Main {
         bookShelf.appendBook(new Book("第二本书"));
         bookShelf.appendBook(new Book("第三本书"));
         bookShelf.appendBook(new Book("第四本书"));
+        bookShelf.appendBook(new Book("第五本书"));
         Iterator<Book> it = bookShelf.iterator();
         while (it.hasNext()) {
             Book book = it.next();
