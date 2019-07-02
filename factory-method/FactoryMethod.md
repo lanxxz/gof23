@@ -1,7 +1,7 @@
 # Factory Method 模式(工厂方法模式)
 工厂方法模式，又称工厂模式、多态工厂模式和虚拟构造器模式，通过定义工厂父类负责定义创建对象的公共接口，而子类则负责生成具体的对象。  
 工厂方法模式采用[Template Method 模式](../template-method/TemplateMethod.md)构建生成实例的工厂。  
-[Iterator 模式](../iterator/iterator.iml)中 iterator 方法生产 Iterator 实例时使用 Factory Method 模式。  
+[Iterator 模式](../iterator/Iterator.md)中 iterator 方法生产 Iterator 实例时使用 Factory Method 模式。  
 ## 优点
 - 调用者创建实例，只需要知道其名称
 - 扩展性高。如果想增加一个产品，只需要扩展一个工厂类。
