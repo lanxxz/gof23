@@ -3,7 +3,7 @@
 提供对象创建机制，增加现有代码灵活性和复用性。  
 - [Singleton 模式](./sigleton/sigleton.md)
 - Abstract Factory 模式
-- Factory Method 模式
+- [Factory Method 模式](./factory-method/FactoryMethod.md)
 - Builder 模式
 - Prototype 模式
 ## 结构型设计模式  

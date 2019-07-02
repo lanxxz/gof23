@@ -13,6 +13,7 @@
         <module>iterator</module>
         <module>sigleton</module>
         <module>template-method</module>
+        <module>factory-method</module>
     </modules>
 
 
