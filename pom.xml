@@ -6,7 +6,16 @@
 
     <groupId>com.alien</groupId>
     <artifactId>gof23</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>adapter</module>
+        <module>iterator</module>
+        <module>sigleton</module>
+        <module>E:/java homework/gof23/templateMethod</module>
+        <module>E:/java homework/gof23/templateMethod</module>
+        <module>template-method</module>
+    </modules>
 
 
 </project>

@@ -1,14 +1,14 @@
 #   设计模式
 ## 创建型设计模式  
 提供对象创建机制，增加现有代码灵活性和复用性。  
-- [Singleton 模式](./src/main/java/com/alien/gof23/sigleton/sigleton.md)
+- [Singleton 模式](./sigleton/sigleton.md)
 - Abstract Factory 模式
 - Factory Method 模式
 - Builder 模式
 - Prototype 模式
 ## 结构型设计模式  
 解释如何将对象和类组装成更大的结构，同时保持结构的灵活性和高效性。  
-- [Adapter 模式](./src/main/java/com/alien/gof23/adapter/Adapter.md)
+- [Adapter 模式](./adapter/Adapter.md)
 - Bridge 模式
 - Composite 模式
 - Decorator 模式
@@ -17,7 +17,7 @@
 - Proxy 模式
 ## 行为型设计模式  
 负责有效的沟通和对象之间的责任分配。  
-- [Iterator 模式](./src/main/java/com/alien/gof23/iterator/Iterator.md)
+- [Iterator 模式](./iterator/Iterator.md)
 - Chain of Resposibility 模式
 - Command 模式
 - Interpreter 模式
@@ -26,7 +26,7 @@
 - Observer 模式
 - State 模式
 - Strategy 模式
-- [Template Method 模式](./src/main/java/com/alien/gof23/template/TemplateMethod.md)
+- [Template Method 模式](./template-method/TemplateMethod.md)
 - Visitor 模式  
 # 七大设计模式原则  
 - __单一职责原则__：一个类只负责一个功能领域的相应职责。  
