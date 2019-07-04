@@ -11,7 +11,8 @@ import com.alien.gof23.framework.Product;
 public class IDCard extends Product {
 
     private String owner;
-    public IDCard(String owner) {
+    //使用默认修饰，让包外不可 创建实例，即通过 new 创建
+    IDCard(String owner) {
         System.out.println("Made " + owner + "'s ID card.");
         this.owner = owner;
     }
