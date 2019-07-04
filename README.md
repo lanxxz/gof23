@@ -14,8 +14,9 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 ## 创建型设计模式  
 提供对象创建机制，增加现有代码灵活性和复用性。  
 - [Singleton 模式](./sigleton/sigleton.md)
-- Abstract Factory 模式
+- [Simple Factory 模式](./simple-factory/simpleFactory.md)
 - [Factory Method 模式](./factory-method/FactoryMethod.md)
+- Abstract Factory 模式
 - Builder 模式
 - Prototype 模式
 ## 结构型设计模式  
