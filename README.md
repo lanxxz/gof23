@@ -17,7 +17,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Simple Factory 模式](./simple-factory/simpleFactory.md)
 - [Factory Method 模式](./factory-method/FactoryMethod.md)
 - Abstract Factory 模式
-- Builder 模式
+- [Builder 模式](./builder/builder.md)
 - [Prototype 模式](./prototype/prototype.md)
 ## 结构型设计模式  
 解释如何将对象和类组装成更大的结构，同时保持结构的灵活性和高效性。  

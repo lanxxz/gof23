@@ -16,6 +16,7 @@
         <module>factory-method</module>
         <module>simple-factory</module>
         <module>prototype</module>
+        <module>builder</module>
     </modules>
 
     <build>
