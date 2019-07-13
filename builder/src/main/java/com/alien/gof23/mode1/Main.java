@@ -1,5 +1,7 @@
 package com.alien.gof23.mode1;
 
+import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory;
+
 /**
  * 主入口
  *
@@ -13,19 +15,23 @@ public class Main {
             System.exit(0);
         }
 
-        if ("plain".equals(args[0])) {
-            TextBuilder textBuilder = new TextBuilder();
-            Director director = new Director(textBuilder);
-            director.construct();
-            System.out.println(textBuilder.getResult());
-        } else if ("html".equals(args[0])) {
-            HtmlBuilder htmlBuilder = new HtmlBuilder();
-            Director director = new Director(htmlBuilder);
-            director.construct();
-            System.out.println(htmlBuilder.getResult());
-        } else {
-            usage();
-            System.exit(0);
+        Director director = null;
+        switch (args[0]) {
+            case "plain":
+                TextBuilder textBuilder = new TextBuilder();
+                director = new Director(textBuilder);
+                director.construct();
+                System.out.println(textBuilder.getResult());
+                break;
+            case "html":
+                HtmlBuilder htmlBuilder = new HtmlBuilder();
+                director = new Director(htmlBuilder);
+                director.construct();
+                System.out.println(htmlBuilder.getResult());
+                break;
+            default:
+                usage();
+                System.exit(0);
         }
     }
 
