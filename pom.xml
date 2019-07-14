@@ -17,6 +17,7 @@
         <module>simple-factory</module>
         <module>prototype</module>
         <module>builder</module>
+        <module>abstract-factory</module>
     </modules>
 
     <build>

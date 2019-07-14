@@ -16,7 +16,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Singleton 模式](./sigleton/sigleton.md)
 - [Simple Factory 模式](./simple-factory/simpleFactory.md)
 - [Factory Method 模式](./factory-method/FactoryMethod.md)
-- Abstract Factory 模式
+- [Abstract Factory 模式](./abstract-factory/abstract-factory.md)
 - [Builder 模式](./builder/builder.md)
 - [Prototype 模式](./prototype/prototype.md)
 ## 结构型设计模式  
