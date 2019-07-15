@@ -7,12 +7,10 @@ package com.alien.gof23.mode1.factory;
  * @author Alien
  * @since 2019/7/14 21:53
  */
-public abstract class Item {
+public abstract class Item implements HTMLLabel {
     protected String caption;
 
     public Item(String caption) {
         this.caption = caption;
     }
-
-    public abstract String makeHTML();
 }

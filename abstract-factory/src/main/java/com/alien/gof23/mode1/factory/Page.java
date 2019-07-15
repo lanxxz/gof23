@@ -13,7 +13,7 @@ import java.util.List;
  * @author Alien
  * @since 2019/7/14 22:02
  */
-public abstract class Page {
+public abstract class Page implements HTMLLabel {
     protected String title;
     protected String author;
     protected List<Item> content = new ArrayList<>();
@@ -38,5 +38,4 @@ public abstract class Page {
         }
     }
 
-    public abstract String makeHtml();
 }
