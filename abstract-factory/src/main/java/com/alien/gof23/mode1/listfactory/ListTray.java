@@ -15,13 +15,13 @@ public class ListTray extends Tray {
     }
 
     @Override
-    public String makeHTML() {
+    public String makeHtml() {
         StringBuilder builder = new StringBuilder();
         builder.append("<li>\n")
                 .append(caption + "\n")
                 .append("<ul>\n");
         for (Item item: tray) {
-            builder.append(item.makeHTML());
+            builder.append(item.makeHtml());
         }
         builder.append("</ul>\n").append("</li>\n");
         return builder.toString();

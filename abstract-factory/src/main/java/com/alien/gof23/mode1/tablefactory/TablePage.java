@@ -22,7 +22,7 @@ public class TablePage extends Page {
                 .append("<h1>" + title + "</h1>\n")
                 .append("<table width=\"80%\" border=\"3\">\n");
         for (Item item: content) {
-            builder.append(item.makeHTML());
+            builder.append(item.makeHtml());
         }
         builder.append("</table>\n")
                 .append("<hr><address>" + author + "</address>")

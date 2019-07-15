@@ -14,7 +14,7 @@ public class TableLink extends Link {
     }
 
     @Override
-    public String makeHTML() {
+    public String makeHtml() {
         return "<td><a href=\"" + url +
                 "\">" + caption + "</a></td>\n";
     }

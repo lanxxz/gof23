@@ -13,4 +13,5 @@ public abstract class Item implements HTMLLabel {
     public Item(String caption) {
         this.caption = caption;
     }
+
 }

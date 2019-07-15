@@ -15,7 +15,7 @@ public class TableTray extends Tray {
     }
 
     @Override
-    public String makeHTML() {
+    public String makeHtml() {
         StringBuilder builder = new StringBuilder();
         builder.append("<td>")
                 .append("<table width=\"100%\" border=\"1\"><tr>")
@@ -24,7 +24,7 @@ public class TableTray extends Tray {
                 .append("</tr>\n")
                 .append("<tr>\n");
         for (Item item: tray) {
-            builder.append(item.makeHTML());
+            builder.append(item.makeHtml());
         }
         builder.append("</tr></table>").append("</td>");
         return builder.toString();

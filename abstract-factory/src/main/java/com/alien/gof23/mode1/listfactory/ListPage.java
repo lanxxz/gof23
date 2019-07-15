@@ -22,7 +22,7 @@ public class ListPage extends Page {
                 .append("<h1>" + title + "</h1>\n")
                 .append("<ul>\n");
         for (Item item: content) {
-            builder.append(item.makeHTML());
+            builder.append(item.makeHtml());
         }
         builder.append("</ul>\n")
                 .append("<hr><address>" + author + "</address>")
