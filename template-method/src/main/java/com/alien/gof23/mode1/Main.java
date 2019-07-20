@@ -14,7 +14,7 @@ public class Main {
         AbstractDisplay charDisplay = new CharDisplay('H');
         StringDisplay stringDisplay = new StringDisplay("Hello,world!");
         StringDisplay stringDisplay1 = new StringDisplay("你好，世界！");
-
+        // test
         charDisplay.display();
         stringDisplay.display();
         stringDisplay1.display();
