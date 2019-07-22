@@ -12,8 +12,17 @@ public class Main {
         Display d2 = new Display(new StringDisplayImpl("Hello, unvierse."));
         CountDisplay d3 = new CountDisplay(new StringDisplayImpl("Hello, China!"));
         d1.display();
+        System.out.println();
         d2.display();
+        System.out.println();
         d3.display();
+        System.out.println();
         d3.multiDisplay(3);
+        // 扩展
+        IncreaseDisplay increaseDisplay = new IncreaseDisplay(new CharDisplayImpl('<', '*', '>'), 1);
+        IncreaseDisplay display = new IncreaseDisplay(new CharDisplayImpl('|', '#', '-'), 2);
+        increaseDisplay.increaseDisplay(4);
+        System.out.println();
+        display.increaseDisplay(6);
     }
 }
