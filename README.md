@@ -38,7 +38,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - Memento 模式
 - Observer 模式
 - State 模式
-- Strategy 模式
+- [Strategy 模式](./strategy/strategy.md)
 - [Template Method 模式](./template-method/TemplateMethod.md)
 - Visitor 模式  
 # GoF23
