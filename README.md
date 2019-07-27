@@ -24,7 +24,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Adapter 模式](./adapter/Adapter.md)
 - [Bridge 模式](./bridge/bridge.md)
 - [Composite 模式](./composite/composite.md)
-- Decorator 模式
+- [Decorator 模式](./decorator/decorator.md)
 - Facade 模式
 - Flyweight 模式
 - Proxy 模式
