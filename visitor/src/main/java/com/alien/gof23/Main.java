@@ -1,5 +1,7 @@
 package com.alien.gof23;
 
+import java.util.Iterator;
+
 /**
  * 主入口
  *
@@ -37,6 +39,24 @@ public class Main {
             tomura.add(new File("game.doc", 400));
             tomura.add(new File("junk.mail", 500));
             root.accept(new ListVisitor());
+
+            System.out.println();
+            FileFindVisitor ffv = new FileFindVisitor(".html");
+            root.accept(ffv);
+            System.out.println("HTML files is ");
+            Iterator<Entry> foundFiles = ffv.getFoundFiles();
+            for (;foundFiles.hasNext();) {
+                Entry next = foundFiles.next();
+                System.out.println(next.toString());
+            }
+
+            System.out.println();
+            ElementArrayList elementArrayList = new ElementArrayList();
+            elementArrayList.add(bin);
+            elementArrayList.add(usr);
+            elementArrayList.accept(new ListVisitor());
+
+
         } catch (FileTreatementException e) {
             e.printStackTrace();
         }
