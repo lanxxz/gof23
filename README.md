@@ -40,7 +40,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - State 模式
 - [Strategy 模式](./strategy/strategy.md)
 - [Template Method 模式](./template-method/TemplateMethod.md)
-- Visitor 模式  
+- [Visitor 模式](./visitor/visitor.md)  
 # GoF23
 __GoF23__ 是指 被称为 Gang of Four(GoF) 的四个人整理出来的 23 种设计模式。  
 包括：Singleton 模式、  Abstract Factory 模式、
