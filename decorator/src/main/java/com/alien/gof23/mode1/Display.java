@@ -1,4 +1,4 @@
-package com.alien.gof23;
+package com.alien.gof23.mode1;
 
 /**
  * 用于显示字符串的抽象类

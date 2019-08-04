@@ -1,4 +1,4 @@
-package com.alien.gof23;
+package com.alien.gof23.mode1;
 
 /**
  * 用于只显示左右边框的类

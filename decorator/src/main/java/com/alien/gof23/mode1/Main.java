@@ -1,4 +1,4 @@
-package com.alien.gof23;
+package com.alien.gof23.mode1;
 
 /**
  * 主入口
