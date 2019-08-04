@@ -15,6 +15,7 @@ Facade 模式为互相关联在一起的错综复杂的类整理出一个高层�
 - 预防低水平人员带来的风险
 - JAVA 的三层开发模式
 - 可以递归的使用 Facade 模式 来降低复杂系统的耦合度
+- 希望控制把控入口，外部只能通过某个类来访问，这样以后要换方案就不会影响外部使用。
 ## JDK 实例
 - java.lang.Class
 - javax.faces.webapp.FacesServlet
@@ -23,5 +24,7 @@ Facade 模式为互相关联在一起的错综复杂的类整理出一个高层�
 - Singleton 模式: 有时候可以使用 Singleton 模式创建 Facade 角色
 - Mediator 模式: Facade 角色使用其他角色来提供高层接口。 
 Mediator 角色作为 Colleague 角色间的仲裁者，负责调停。
-可以说，Facade 模式是单向的，Mediator 模式是双向的.。
+可以说，Facade 模式是单向的，Mediator 模式是双向的。
+## 参考文章
+- [设计模式系列·Facade模式之MVC的烦恼](https://juejin.im/post/58daecb244d904006887abd2)
 
