@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             PageMaker.makeWelcomePage("hyuki@yuki.com", "Wecome.html");
+            PageMaker.makeLinkPage("linkPage.html");
         } catch (IOException e) {
             e.printStackTrace();
         }

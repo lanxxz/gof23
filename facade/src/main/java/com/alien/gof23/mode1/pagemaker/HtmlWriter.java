@@ -9,7 +9,7 @@ import java.io.Writer;
  * @author alien
  * @since 2019-08-04 17:02
  */
-public class HtmlWriter {
+class HtmlWriter {
     private Writer writer;
     public HtmlWriter(Writer writer) {
         this.writer = writer;
@@ -29,7 +29,7 @@ public class HtmlWriter {
     }
 
     public void link(String href, String caption) throws IOException {
-        writer.write("<a href=\"" + href + "\">" + caption + "</a>");
+        writer.write("<a href=\"" + href + "\">" + caption + "</a>\n");
     }
 
     public void mailto(String mailaddr, String username) throws IOException {

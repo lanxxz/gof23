@@ -13,7 +13,7 @@ import java.util.Properties;
  * @author alien
  * @since 2019-08-03 16:22
  */
-public class Database {
+class Database {
     private Database(){}
 
     public static Properties getProperties(String dbName) {
