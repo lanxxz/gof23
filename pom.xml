@@ -25,6 +25,7 @@
         <module>visitor</module>
         <module>chainOfResponsibility</module>
         <module>facade</module>
+        <module>mediator</module>
     </modules>
 
     <build>
