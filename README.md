@@ -34,7 +34,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Chain of Resposibility 模式](./chainOfResponsibility/chainOfResponsibility.md)
 - Command 模式
 - Interpreter 模式
-- Mediator 模式
+- [Mediator 模式](./mediator/mediator.md)
 - Memento 模式
 - Observer 模式
 - State 模式
