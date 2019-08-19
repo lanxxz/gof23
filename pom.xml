@@ -26,6 +26,7 @@
         <module>chainOfResponsibility</module>
         <module>facade</module>
         <module>mediator</module>
+        <module>observer</module>
     </modules>
 
     <build>
