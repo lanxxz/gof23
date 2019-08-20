@@ -21,7 +21,9 @@ view 是管理 model "怎么显示"的部分。通常情况下，一个 model �
 - 避免循环调用
 - 如果顺序执行，某一观察者错误会导致系统卡顿，一般采用 __异步模式__
 - 设计具体观察者对象时，要注意这些观察者的通知顺序，不能因为他们的调用顺序改变而产生问题，尽量保持各个模块独立
-
+## jdk 的 Observer 接口
+传递给 `java.util.Observer` 接口的 Subject 角色必须是 `java.util.Observable`类型的子类型，由于 JAVA 是单一继承，
+导致如果 Subject 角色如果已经是 `java.util.Observable`
 ## jdk 实例
 - ava.util.Observer/java.util.Observable
 - java.util.EventListener (所有子类)
