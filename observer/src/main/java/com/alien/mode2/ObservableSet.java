@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @program: gof23
@@ -16,33 +17,20 @@ public class ObservableSet<E> extends ForwaringSet<E> {
         super(set);
     }
 
-    private final List<SetObserver<E>> observers = new ArrayList<>();
+//    private final List<SetObserver<E>> observers = new ArrayList<>();
+    // 并发集合，避免死锁或异常
+    private final List<SetObserver<E>> observers = new CopyOnWriteArrayList<>();
 
     public void addObserver(SetObserver<E> observer) {
-        synchronized (observers) {
-            observers.add(observer);
-        }
+        observers.add(observer);
     }
 
     public boolean removeObserver(SetObserver<E> observer) {
-        synchronized (observers) {
-            return observers.remove(observer);
-        }
+        return observers.remove(observer);
     }
 
     private void notifyElementAdded(E element) {
-//        synchronized (observers) {
-//            for (SetObserver<E> observer: observers) {
-//                observer.added(this, element);
-//            }
-//        }
-
-        //为避免以上代码带来的异常或死锁问题
-        List<SetObserver<E>> snapshot = null;
-        synchronized (observers) {
-            snapshot = new ArrayList<>(observers);
-        }
-        for (SetObserver<E> observer: snapshot) {
+        for (SetObserver<E> observer: observers) {
             observer.added(this, element);
         }
     }
