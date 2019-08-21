@@ -31,10 +31,19 @@ public class ObservableSet<E> extends ForwaringSet<E> {
     }
 
     private void notifyElementAdded(E element) {
+//        synchronized (observers) {
+//            for (SetObserver<E> observer: observers) {
+//                observer.added(this, element);
+//            }
+//        }
+
+        //为避免以上代码带来的异常或死锁问题
+        List<SetObserver<E>> snapshot = null;
         synchronized (observers) {
-            for (SetObserver<E> observer: observers) {
-                observer.added(this, element);
-            }
+            snapshot = new ArrayList<>(observers);
+        }
+        for (SetObserver<E> observer: snapshot) {
+            observer.added(this, element);
         }
     }
 
