@@ -1,5 +1,6 @@
 package com.alien.mode1.game;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
  * @author: alien
  * @since: 2019/08/21 18:20
  */
-public class Memento {
+public class Memento implements Serializable {
     // 所持有的金币
     int money;
     // 获得的水果
