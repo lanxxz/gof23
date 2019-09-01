@@ -52,7 +52,9 @@ Adapter 模式、Bridge 模式、Composite 模式、
 Decorator 模式、Facade 模式、Flyweight 模式、Proxy 模式、
 Iterator 模式、Chain of Resposibility 模式、Command 模式、
 Interpreter 模式、Mediator 模式、Memento 模式、Observer 模式、
-State 模式、Strategy 模式、Template Method 模式 和 Visitor 模式。  
+State 模式、Strategy 模式、Template Method 模式 和 Visitor 模式。 
+# 勘误
+- 单例英语应为 Singleton, 错误写成 Sigleton 
 
 
 
