@@ -1,6 +1,8 @@
 # Flyweight 模式 (享元模式)
 享元模式主要是为了减少创建对象的数量，以减少内存占用和提高性能。  
-享元模式尝试重用现有的同类对象，如果为找到匹配的对象，则创建新对象。  
+享元模式尝试重用现有的同类对象，如果为找到匹配的对象，则创建新对象。 
+## 特点
+- 一处修改会对多个地方产生影响。 
 ## 优点
 - 大大减少对象的创建，降低系统的内存，使效率提高。
 ## 缺点
@@ -21,3 +23,7 @@
 - java.lang.Integer#valueOf(int)
 - java.lang.Boolean#valueOf(boolean)
 - java.lang.Byte#valueOf(byte)
+## 相关设计模式
+- Proxy 模式是通过设置代理提高程序的处理速度;而享元模式处理的痛点是生成实例的处理话费较长时间
+- [Composite 模式](../composite/composite.md):可以使用享元模式共享 Composite 模式的 Leaf 角色
+- [singleton 模式](../sigleton/sigleton.md)享元模式的工厂有时使用单例实现，
