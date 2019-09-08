@@ -62,6 +62,13 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
      */
     private JButton buleButton = new JButton("bule");
 
+    /**
+     * description: 撤销按钮
+     * @since: 2019-09-08
+     */
+    private JButton undoButton = new JButton("undo");
+
+
     public Main(String title) {
         super(title);
 
@@ -71,12 +78,14 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
         redButton.addActionListener(this);
         greenButton.addActionListener(this);
         buleButton.addActionListener(this);
+        undoButton.addActionListener(this);
 
         Box buttonBox = new Box(BoxLayout.X_AXIS);
         buttonBox.add(clearButton);
         buttonBox.add(redButton);
         buttonBox.add(greenButton);
         buttonBox.add(buleButton);
+        buttonBox.add(undoButton);
         Box mainBox = new Box(BoxLayout.Y_AXIS);
         mainBox.add(buttonBox);
         mainBox.add(canvas);
@@ -104,6 +113,9 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
             Command command = new ColorCommand(canvas, Color.blue);
             history.append(command);
             command.execute();
+        } else if (e.getSource() == undoButton) {
+            history.undo();
+            canvas.repaint();
         }
     }
 
