@@ -18,13 +18,13 @@ public class DrawCanvas extends Canvas implements Drawable {
      * description: 颜色
      * @since: 2019-09-08
      */
-    private Color color = Color.red;
+    private Color color;
 
     /**
      * description: 要绘制圆点的半径
      * @since: 2019-09-08
      */
-    private int radius = 6;
+    private int radius;
 
     /**
      * description: 命令的历史记录
@@ -36,6 +36,20 @@ public class DrawCanvas extends Canvas implements Drawable {
         setSize(width, height);
         setBackground(Color.white);
         this.history = history;
+        init();
+    }
+
+    /**
+     * method name: init <br/>
+     * description: 初始化
+
+     * @return: void
+     * @since: 2019-09-08
+     */
+    public void init() {
+        color = Color.red;
+        radius = 6;
+        history.append(new ColorCommand(this, color));
     }
 
     /**
@@ -55,5 +69,10 @@ public class DrawCanvas extends Canvas implements Drawable {
         Graphics g = getGraphics();
         g.setColor(color);
         g.fillOval(x - radius, y - radius, radius * 2, radius * 2);
+    }
+
+    @Override
+    public void setColor(Color color) {
+        this.color = color;
     }
 }
