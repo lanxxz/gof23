@@ -35,7 +35,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 负责有效的沟通和对象之间的责任分配。  
 - [Iterator 模式](./iterator/Iterator.md)
 - [Chain of Resposibility 模式](./chainOfResponsibility/chainOfResponsibility.md)
-- Command 模式
+- [Command 模式](./command/command.md)
 - Interpreter 模式
 - [Mediator 模式](./mediator/mediator.md)
 - [Memento 模式](./memento/memento.md)
