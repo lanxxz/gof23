@@ -31,6 +31,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Facade 模式](./facade/facade.md)
 - [Flyweight 模式](./flyweight/flyweight.md)
 - [Proxy 模式](./proxy/proxy.md)
+- [Producer-Consumer 模式](./produce-consumer/producer-consumer.md)
 ## 行为型设计模式  
 负责有效的沟通和对象之间的责任分配。  
 - [Iterator 模式](./iterator/Iterator.md)
