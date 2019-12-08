@@ -22,7 +22,7 @@ __设计模式__ 是反复出现问题的解决方案，是如何解决某些问
 - [Abstract Factory 模式](./abstract-factory/abstract-factory.md)
 - [Builder 模式](./builder/builder.md)
 - [Prototype 模式](./prototype/prototype.md)
-- [NullObject 模式(空指针模式)]()
+- [NullObject 模式(空对象模式)]()
 ## 结构型设计模式  
 解释如何将对象和类组装成更大的结构，同时保持结构的灵活性和高效性。  
 - [Adapter 模式](./adapter/Adapter.md)
